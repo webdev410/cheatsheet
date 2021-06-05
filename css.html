@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>HTML Notes</title>
+
+</head>
+<body>
+
+ <!-- Nav Menu -->
+ <nav id="top">
+    <ul>
+        <li><a href="setup.html">Setup Tools</a></li>
+        
+
+        <div class="dropdown">
+            <li><a href="html.html">HTML</a></li>
+            <div class="dropdown-content">
+                <li><a href="html.html#terminal">Terminal/Git</a></li>
+                <li><a href="tags.html">Semantic Tags</a></li>
+
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <li><a href="css.html">CSS</a></li>
+                <div class="dropdown-content">
+                    <a href="css.html#attributes">Target Attributes</a>
+                    <a href="css.html#display">Display</a>
+                    <a href="css.html#box">The Box Model</a>
+                    <a href="css.html#units">Units</a>
+                    <a href="css.html#positioning">Positioning</a>
+                    <a href="css.html#media-queries">Media Queries</a>
+                </div>
+            </div>
+        
+    </ul>
+</nav>
+
+    
+<!-- Back to Top Button -->
+<div class="fixed">
+    <a href="#top">TOP</a>
+</div>
+
+
+    <!-- CSS -->
+    
+    <div class="title">
+        <h1 >CSS</h1>
+    </div>
+    
+        <div class="title">
+            <h2 id="attributes">Targeting Attributes</h2> 
+        </div>
+            
+        <div class="container">
+                <div class="item">
+                    <h2>Class</h2>
+                        <code>
+                            .class-name
+                        </code>
+                </div>
+                <div class="item">
+                    <h2>ID</h2>
+                        <code>
+                            #id-name
+                        </code>
+                </div>
+                <div class="item">
+                    <h2>Combine CSS</h2>
+                        <code>
+                            Top, Right, Left, Bottom <br><br>
+
+                            // Example //<br><br>
+
+                            margin: 0 5 10 15;
+            
+                        </code>
+                </div>
+            </div>
+    
+            <div class="title">
+                <h2 id="attributes">Display</h2> 
+            </div>
+            <div class="container">
+                <div class="item">
+                    <h2>Block</h2>
+                        <code>
+                            display: block;
+                        </code>
+                        <p>
+                            Changes element from inline to block
+                        </p>
+                </div>
+                <div class="item">
+                    <h2>Inline</h2>
+                        <code>
+                            display: inline;
+                        </code>
+                        <p>
+                            Changes element from block to inline
+                        </p>
+                </div>
+
+                <div class="item">
+                    <h2>Hide Element</h2>
+                        <code>
+                            display: none;
+                        </code>
+                </div>
+
+                <div class="item">
+                    <h2>Center Element</h2>
+                        <code>
+                            margin: 0 auto;
+                        </code>
+                        
+                </div>
+                
+            </div>
+
+
+
+        <div class="title ">
+            <h2  id="box">Box Model</h2>
+        </div>
+      <div class="container">
+          <div class="item">
+              <img src="./assets/images/boxmodel.png" alt="boxmodel" style="width: 250px;">
+          </div>
+        </div>
+
+      </div>
+       
+      
+      <div class="title ">
+        <h2 id="id">Units</h2> 
+    </div>
+
+    <div class="container">
+        <div class="item">
+            <h2>Viewport</h2>
+                <code>
+                    height: 100vh;
+                </code>
+                <p>100% of the viewport</p>
+        </div>
+        <div class="item">
+            <h2>Percentage</h2>
+                <code>
+                    height: 100%;
+                </code>
+                <p>100% of the div</p>
+        </div>
+        <div class="item">
+            <h2>Pixels</h2>
+                <code>
+                    height: 100px;
+                </code>
+                <p>100 pixels</p>
+        </div>
+        <div class="item">
+            <h2>Ems</h2>
+                <code>
+                    height: 2em;
+                </code>
+                <p>Twice the font-size</p>
+        </div>
+        </div>
+
+
+        <div class="title " id="positioning">
+            <h2>Positioning </h2> 
+        </div>
+    
+        <div class="container">
+            <div class="item">
+                <h2>Static</h2>
+                    <code>
+                        position: static;
+                    </code>
+                    <p>Shows exact location</p>
+            </div>
+
+            <div class="item">
+                <h2>Relatice</h2>
+                    <code>
+                        position: relative;
+                    </code>
+                    <p>Moves relative to where the browser wanted to put it</p>
+            </div>
+            <div class="item">
+                <h2>Absolute</h2>
+                    <code>
+                        position: absolute;
+                    </code>
+                    <p>Lets you position it absolutely within the parent element</p>
+            </div>
+            <div class="item">
+                <h2>Fixed</h2>
+                    <code>
+                        position: fixed;
+                    </code>
+                    <p>Doesn't matter what container it is, it will go where you tell it</p>
+            </div>
+            <div class="item">
+                <h2>Example</h2>
+                    <code>
+                        #fixed-box { <br>
+                            position: absolute <br>
+                            right: 10px; <br>
+                            top: 10px; <br>
+                        }
+                    </code>
+                    <p>Doesn't matter what container it is, it will go where you tell it</p>
+            </div>
+            <p>*Note: If something has absolute positioning, one of it's parents must be relative</p>
+            </div>
+
+
+
+        
+
+  
+            
+           
+     </body>
+</html>
